@@ -3,13 +3,45 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: bisque;
+    background-color: white;
 }
 header{
+  background-image: url(https://images.unsplash.com/photo-1498049860654-af1a5c566876?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: black;
+}
+header::after{
+    content: ''; /*set to an empty string*/
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+header * {
+    position: relative;
+  
+    z-index: 1;
+
+}
+header h1{
+    font-size: 70px;
+}
+header p{
+    font-size: 45px;
+    margin: 0;
 }
 nav{
-    background-color:lightcoral;
+    background-color:#2a7647;
     padding: 25px;
     display: flex;
     justify-content: flex-end;
@@ -21,8 +53,33 @@ a{
     text-decoration: none;
     font-size: 20px;
 }
+section{
+    padding: 20px;
+    text-align: center;
+    color: #000;
+}
+section h2{
+    margin-bottom: 0;
+}
+section p{
+    margin-top: 0;
+}
+.social-links{
+    display: flex;
+    list-style-type: none;
+justify-content: center;
+}
+.social-links a{
+    color: #2a7647;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+#icon-github{
+    color: #2a7647;
+}
 footer{
-    background-color: lightcoral;
+    background-color: #2a7647;
     color: white;
     text-align: center;
 }
